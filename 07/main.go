@@ -1,9 +1,10 @@
-# goweb
+package main
 
-http/net package
+import (
+	"log"
+	"net/http"
+)
 
-``` Go
 func main() {
 	log.Fatal(http.ListenAndServe(":8080", http.FileServer(http.Dir("."))))
 }
-```
